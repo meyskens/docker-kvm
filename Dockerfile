@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 	--no-install-recommends \
 && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
+RUN cd /root/ && wget https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
 
 COPY start.sh /root/start.sh
 
